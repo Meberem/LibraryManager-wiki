@@ -19,7 +19,7 @@ The filesystem provider allows you to copy files from local file system, network
 ### path (required)
 Nothing specific to cdnjs.
 
-### files 
+### files (required)
 If the `id` property points to a folder, then the files array must contain one or more file names matching files in that folder. if `id` points to a URI or a single file then the files array must contain a single entry and the value is any file name you wish to use.
 
 **Type**: Array of strings
