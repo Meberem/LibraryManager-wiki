@@ -49,3 +49,13 @@ A string matching the id of a known provider. This field is required if the root
 The `id` is a identifier for a library that is uniquely identifiable by the specified provider.
 
 **Type**: string
+
+### packages.path (required)
+The path is a folder path relative to the `library.json` file. It represents the folder you want the library files copied to.
+
+**Type**: string
+
+### packages.files (required by some providers)
+The files array is a list of files from the individual library you wish to copy to your project. It allows you to copy just the files from the library you need. Some providers leaves the `files` array optional which means that when not specified, all files from the library will be copied to the project.
+
+**Type**: array of string
