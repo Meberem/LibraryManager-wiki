@@ -34,3 +34,18 @@ Specifies the version of the `library.json` syntax being used on the file. The o
 Use this field to specify a default provider to avoid having to specify the provider in the individual library entries (see below). If a package has a `"provider"` property specified, then that will always win over the `"defaultProvider"`.
 
 **Type**: string (a valid provider id)
+
+### packages
+This is an array of objects describing an individual library.
+
+**Type**: array of library objects
+
+### packages.provider
+A string matching the id of a known provider. This field is required if the root property `"defaultProvider"` is not set.
+
+**Type**: string
+
+### packages.id (required)
+The `id` is a identifier for a library that is uniquely identifiable by the specified provider.
+
+**Type**: string
