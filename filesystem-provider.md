@@ -1,0 +1,1 @@
+Please see the [library.json reference](library-json-reference) for more details.
