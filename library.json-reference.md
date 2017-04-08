@@ -31,3 +31,6 @@ Specifies the version of the `library.json` syntax being used on the file. The o
 **Type**: string
 
 ### defaultProvider (optional)
+Use this field to specify a default provider to avoid having to specify the provider in the individual library entries (see below). If a package has a `"provider"` property specified, then that will always win over the `"defaultProvider"`.
+
+**Type**: string (a valid provider id)
