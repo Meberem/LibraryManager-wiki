@@ -6,6 +6,6 @@ Welcome to the LibraryInstaller wiki!
 - [library.json reference](library-json-reference)
 - Providers
   - [Cdnjs](cdnjs-provider)
-  - [File system](filesystem-provider)
+  - [File system](file-system-provider)
 - MSBuild support
 - Extensibility
