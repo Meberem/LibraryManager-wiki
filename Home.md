@@ -5,7 +5,7 @@ Welcome to the LibraryInstaller wiki!
 - General usage
 - [library.json reference](library-json-reference)
 - Providers
-  - Cdnjs
-  - File system
+  - [Cdnjs](cdnjs-provider)
+  - [File system](filesystem-provider)
 - MSBuild support
 - Extensibility
