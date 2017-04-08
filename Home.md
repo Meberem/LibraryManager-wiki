@@ -8,4 +8,5 @@ Welcome to the LibraryInstaller wiki!
   - [Cdnjs](cdnjs-provider)
   - [File system](file-system-provider)
 - MSBuild support
+- [Error codes](error-codes)
 - Extensibility
