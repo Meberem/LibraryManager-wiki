@@ -22,3 +22,10 @@ This example shows a `library.json` file with 2 libraries defined - one from the
   ]
 }
 ```
+
+## Reference
+
+### version
+Specifies the version of the `library.json` syntax being used on the file. The only valid value is `"1.0"` at this point, but that may change with future versions.
+
+**Type**: string
