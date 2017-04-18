@@ -20,3 +20,6 @@ The `"path"` property is undefined in the `library.json` file.
 
 ## LIB006
 The `"id"` property is undefined in the `library.json` file.
+
+## LIB007
+The `"provider"` property is undefined in the `library.json` file.
