@@ -14,3 +14,9 @@ Could not write file. The host (e.g Visual Studio) was not able to write the fil
 
 ## LIB004
 Manifest malformed. The `library.json` file contains syntax errors.
+
+## LIB005
+The `"path"` property is undefined in the `library.json` file.
+
+## LIB006
+The `"id"` property is undefined in the `library.json` file.
