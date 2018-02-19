@@ -11,3 +11,4 @@ Welcome to the LibraryInstaller wiki!
   - [File system](file-system-provider)
 - [Error codes](error-codes)
 - [Extensibility](Extensibility)
+- [Localization](Localization)
