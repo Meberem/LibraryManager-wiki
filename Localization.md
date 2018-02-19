@@ -14,3 +14,19 @@ LibMan projects will continue consuming resources in native format, such as RESX
 
 ## RESX file localization using Mutlilingual App Toolkit
 
+RESX files will be localized using Multilingual App Toolkit (MAT). It's installed as an extension for Visual Studio 2017 from 
+
+https://marketplace.visualstudio.com/items?itemName=MultilingualAppToolkit.MultilingualAppToolkit-18308
+
+(or from within Visual Studio). 
+
+It was selected since a number of Microsoft DevDiv open source projects successfully utilize it (e.g. Microsoft.VisualStudio.Threading library, etc., see https://github.com/Microsoft/vs-threading). It's a well-established product and allows round-tripping between resx <-> xls with relative ease. 
+
+## VSCT file localization using VsctToXliff tool
+
+Unfortunately VSCT file format is not support by the MAT 4.0 tool (or any other publicly available tool for that matter). So we chose to utilize VsctToXliff tool written by NodeJS Tooling team. See https://github.com/Microsoft/nodejstools/tree/v1.3.x/Common/Tools/VsctToXliff
+ for the original sources. I (alexgav) made slight changes to the tool to make generated xlf machine-translatable and editable with MAT Editor. The location of the modified sources is TBD.
+
+## Building the localized VSIX
+
+Building the localized VSIX is unfortunately a bit complicated since LibMan projects use the new csproj file format, which doesn't include many of the standard C# targets that VSIX build tasks expect to exist. For example, SatelliteDllsProjectOutputGroup target doesn't exist in the new project system. So we will have to do some manual customization of our VSIX csproj to allow inclusion and deployment of the satellite DLLs.
