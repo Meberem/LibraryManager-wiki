@@ -21,3 +21,4 @@ If you don't do that, you'll get ```Project 'Microsoft.Web.LibraryInstaller.Cont
 
 Once you've done the steps above, select the desired project in the Solution Explorer and use Tools->Multilingual App Toolkit->Enable Selection to enable MAT in the selected project. 
 
+![Mutlilingual App Toolkit Menu](./images/EnableMAT.png)
