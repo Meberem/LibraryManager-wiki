@@ -4,7 +4,11 @@
 
 The first step is to download and install MAT 4.0 from https://marketplace.visualstudio.com/items?itemName=MultilingualAppToolkit.MultilingualAppToolkit-18308 (or directly from Visual Studio by using Tools->Extensions and Updates.
 
+![Install from VS](./images/InstallMATFromVS.png)
+
 Once MAT is installed, you will have a new menu item under your Tools menu - "Mutlilingual App Toolkit". 
+
+![Mutlilingual App Toolkit Menu](./images/ToolsMATMenuItem.png)
 
 You will use that menu to enable MAT in new projects. You should not need to use it unless you are adding a new project to LibMan (or starting a completely different product/project). 
 
@@ -19,3 +23,36 @@ If you don't do that, you'll get ```Project 'Microsoft.Web.LibraryInstaller.Cont
 
 Once you've done the steps above, select the desired project in the Solution Explorer and use Tools->Multilingual App Toolkit->Enable Selection to enable MAT in the selected project. 
 
+![Enable MAT](./images/EnableMAT.png)
+
+It will modify your csproj file to add something like
+```
+  <PropertyGroup Label="MultilingualAppToolkit">
+    <MultilingualAppToolkitVersion>4.0</MultilingualAppToolkitVersion>
+    <MultilingualFallbackLanguage>en</MultilingualFallbackLanguage>
+    <TranslationReport Condition="'$(Configuration)' == 'Release'">true</TranslationReport>
+    <SuppressPseudoWarning Condition="'$(Configuration)' == 'Debug'">true</SuppressPseudoWarning>
+  </PropertyGroup>
+```
+
+and
+
+```
+  <Target Name="MATPrerequisite" BeforeTargets="PrepareForBuild" Condition="!Exists('$(MSBuildExtensionsPath)\Microsoft\Multilingual App Toolkit\Microsoft.Multilingual.ResxResources.targets')" Label="MultilingualAppToolkit">
+    <Warning Text="$(MSBuildProjectFile) is Multilingual build enabled, but the Multilingual App Toolkit is unavailable during the build. If building with Visual Studio, please check to ensure that toolkit is properly installed." />
+  </Target>
+```
+
+Make sure to save your csproj at this point. You are done enabling MAT for this project. Repeat for other projects as needed. You can also run it on the solution level.
+
+**Troubleshooting:** Look in the Output Window, and Make sure Multilinguage App Toolkit is selected. If all goes well, you should get 
+
+```
+1>  Project 'Microsoft.Web.LibraryInstaller.Contracts' was enabled.  The project's source culture is 'en' [English]. 
+```
+
+![MAT Output Window - Success](./images/MATSuccess.png)
+
+If something goes wrong, you may get an error. Google is your friend in that case.
+
+![MAT Output Window - Error](./images/MATError.png)
