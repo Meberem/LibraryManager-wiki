@@ -6,6 +6,8 @@ The first step is to download and install MAT 4.0 from https://marketplace.visua
 
 Once MAT is installed, you will have a new menu item under your Tools menu - "Mutlilingual App Toolkit". 
 
+![Mutlilingual App Toolkit Menu](./images/ToolsMATMenuItem.png)
+
 You will use that menu to enable MAT in new projects. You should not need to use it unless you are adding a new project to LibMan (or starting a completely different product/project). 
 
 ## Enable MAT in your projects (already done for LibMan)
