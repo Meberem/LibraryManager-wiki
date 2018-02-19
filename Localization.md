@@ -22,6 +22,8 @@ https://marketplace.visualstudio.com/items?itemName=MultilingualAppToolkit.Multi
 
 It was selected since a number of Microsoft DevDiv open source projects successfully utilize it (e.g. Microsoft.VisualStudio.Threading library, etc., see https://github.com/Microsoft/vs-threading). It's a well-established product and allows round-tripping between resx <-> xls with relative ease. 
 
+Please see [UsingMATForRESXtoXLF](Using MAT for RESX to XLIFF translation) for details of the process.
+
 ## VSCT file localization using VsctToXliff tool
 
 Unfortunately VSCT file format is not support by the MAT 4.0 tool (or any other publicly available tool for that matter). So we chose to utilize VsctToXliff tool written by NodeJS Tooling team. See https://github.com/Microsoft/nodejstools/tree/v1.3.x/Common/Tools/VsctToXliff
