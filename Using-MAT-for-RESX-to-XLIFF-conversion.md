@@ -4,6 +4,8 @@
 
 The first step is to download and install MAT 4.0 from https://marketplace.visualstudio.com/items?itemName=MultilingualAppToolkit.MultilingualAppToolkit-18308 (or directly from Visual Studio by using Tools->Extensions and Updates.
 
+![Install from VS](./images/InstallMATFromVS.png)
+
 Once MAT is installed, you will have a new menu item under your Tools menu - "Mutlilingual App Toolkit". 
 
 ![Mutlilingual App Toolkit Menu](./images/ToolsMATMenuItem.png)
@@ -21,4 +23,4 @@ If you don't do that, you'll get ```Project 'Microsoft.Web.LibraryInstaller.Cont
 
 Once you've done the steps above, select the desired project in the Solution Explorer and use Tools->Multilingual App Toolkit->Enable Selection to enable MAT in the selected project. 
 
-![Mutlilingual App Toolkit Menu](./images/EnableMAT.png)
+![Enable MAT](./images/EnableMAT.png)
