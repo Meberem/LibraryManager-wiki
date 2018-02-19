@@ -42,3 +42,17 @@ and
     <Warning Text="$(MSBuildProjectFile) is Multilingual build enabled, but the Multilingual App Toolkit is unavailable during the build. If building with Visual Studio, please check to ensure that toolkit is properly installed." />
   </Target>
 ```
+
+Make sure to save your csproj at this point. You are done enabling MAT for this project. Repeat for other projects as needed. You can also run it on the solution level.
+
+**Troubleshooting:** Look in the Output Window, and Make sure Multilinguage App Toolkit is selected. If all goes well, you should get 
+
+```
+1>  Project 'Microsoft.Web.LibraryInstaller.Contracts' was enabled.  The project's source culture is 'en' [English]. 
+```
+
+![MAT Output Window - Success](./images/MATSuccess.png)
+
+If something goes wrong, you may get an error. Google is your friend in that case.
+
+![MAT Output Window - Error](./images/MATError.png)
