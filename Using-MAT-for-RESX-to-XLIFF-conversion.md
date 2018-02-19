@@ -10,3 +10,5 @@ Prior to enabling MAT, you need
 
 1. Add Properties\AssemblyInfo.cs if it doesn't exist in your project already
 2. Add ```[assembly: NeutralResourcesLanguage("en")]``` entry to the AssemblyInfo.cs
+
+If you don't do that, you'll get ```Project 'Microsoft.Web.LibraryInstaller.Contracts' was not enabled - the project's source culture could not be determined.```
