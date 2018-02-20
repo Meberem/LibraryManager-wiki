@@ -56,3 +56,67 @@ Make sure to save your csproj at this point. You are done enabling MAT for this 
 If something goes wrong, you may get an error. Google is your friend in that case.
 
 ![MAT Output Window - Error](./images/MATError.png)
+
+## Add Translation Languages
+
+Once you have MAT enabled, adding translation languages is the next step. At this point, you should have a new context menu item when you select your project in Solution Explorer - Multilingual App Toolkit. Select that, and then select Add Translation Languages:
+
+![Add Translation Languages](./images/AddTranslationLanguages.png)
+
+You might get an error message like below
+
+![Translation Provider Manager Issue](./images/TranslationProviderManagerIssue.png)
+
+Click OK to dismiss it. You should get the following dialog for language selection
+
+![Translation Languages](./images/TranslationLanguagesDialog.png)
+
+Use it to select the desired languages. Start with German (de). You can use the Search box to type in the language name or abbreviation as shown above. Once German is shown, make sure to check its checkbox and click OK. You will get MultilingualResources folder added to your project, and your first XLF file for German translation generated from the RESX file in your project:
+
+![Multilingual Resources Folder](./images/MultilingualResourcesFolder.png)
+
+You will also get new German RESX file generated as well:
+
+![Generated Translation RESX](./images/GeneratedTranslationResx.png)
+
+Now you can bring your Add Translation Languages dialog again and finish adding all languages (cs, de, es, fr, it, ja, ko, pl, pt-BR, ru, tr, zh-Hans, zh-Hant). You can add them all at once, without dismissing the dialog. At the end, your project should look something like this:
+
+![All Languages Added](./images/AllLanguagesAdded.png)
+
+Check in the modified project into the loc branch in Git. At this point your project is ready for loc team vendors to pick up the XLF files.
+
+## (Workaround) Fixup csproj to ensure localized resx file regeneration
+
+There seems to be a bug in MAT that requires this manual step. With the current setup, localized resx files (e.g. text.ru.resx) are generated initially, but not updated afterwards. E.g. if you add a new string in the English resx file and build, you will get updated [locale].xlf files (e.g. filename.ru.xlf), but not updated resx files (i.e. filename.ru.resx remains unchanged, without the newly added string). I (alexgav) looked at how other projects using MAT are setup and noticed that they add the following in their csproj files
+
+```
+  <ItemGroup>
+    <XliffResource Include="MultilingualResources\*.xlf" />
+  </ItemGroup>
+```
+
+Adding that to the csproj file of your project seems to fix up regeneration of the translated resx files on build. So make sure to add it to your csproj files.
+
+## (Optional) Machine-Translate Generated XLF files
+
+One of the nice features of XLF is that they can be machine-translated. Simply drop the generated XLF file(s) to 
+
+\\kimkim60\BlackBox\Hackathon\Service-CE\DROP\[your alias]\[culture] (e.g. \\kimkim60\BlackBox\Hackathon\Service-CE\DROP\alexgav\ru)
+
+wait a minute or two, and pick them up from 
+
+\\kimkim60\BlackBox\Hackathon\Service-CE\PICKUP\[your alias]\[culture] (e.g. \\kimkim60\BlackBox\Hackathon\Service-CE\PICKUP\alexgav\ru)
+
+You should see translated text in the picked up XLF file. Normally vendors will manually go over the translated text and fix it up as needed. 
+
+## (Optional) Update project XLF files with translated XLF files
+
+Normally this step is done by the loc team, but it's great to make sure that your setup is working correctly.
+
+In your project, select the XLF file to update (e.g. somefile.ru.xlf) and use Multilingual App Resources context menu in Solution Explorer to execute ```Import/Recycle Translations...``` command. That will bring up the following dialog
+
+![Import Translations Dialog](./images/ImportTranslationsDialog.png)
+
+Click Add, then navigate to the translated XLF file (e.g. Russian translation if you selected "filename.**ru**.xlf"). Once you selected the file, click "Import & Recycle" button in the dialog. You should get a message that resources were imported successfully. 
+
+Now build the project and open the translated RESX file (e.g. filename.ru.resx). You should see localized strings in your RESX file. Build the project will produce satellite assemblies to be included into the VSIX. 
