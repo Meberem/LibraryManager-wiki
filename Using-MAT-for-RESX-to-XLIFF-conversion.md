@@ -85,6 +85,18 @@ Now you can bring your Add Translation Languages dialog again and finish adding 
 
 Check in the modified project into the loc branch in Git. At this point your project is ready for loc team vendors to pick up the XLF files.
 
+## (Workaround) Fixup csproj to ensure localized resx file regeneration
+
+There seems to be a bug in MAT that requires this manual step. With the current setup, localized resx files (e.g. text.ru.resx) are generated initially, but not updated afterwards. E.g. if you add a new string in the English resx file and build, you will get updated [locale].xlf files (e.g. filename.ru.xlf), but not updated resx files (i.e. filename.ru.resx remains unchanged, without the newly added string). I (alexgav) looked at how other projects using MAT are setup and noticed that they add the following in their csproj files
+
+```
+  <ItemGroup>
+    <XliffResource Include="MultilingualResources\*.xlf" />
+  </ItemGroup>
+```
+
+Adding that to the csproj file of your project seems to fix up regeneration of the translated resx files on build. So make sure to add it to your csproj files.
+
 ## (Optional) Machine-Translate Generated XLF files
 
 One of the nice features of XLF is that they can be machine-translated. Simply drop the generated XLF file(s) to 
@@ -105,6 +117,6 @@ In your project, select the XLF file to update (e.g. somefile.ru.xlf) and use Mu
 
 ![Import Translations Dialog](./images/ImportTranslationsDialog.png)
 
-Click Add, then navigate to the translated XLF file (e.g. Russian translation if you selected "filename.**ru**.xlf"). 
+Click Add, then navigate to the translated XLF file (e.g. Russian translation if you selected "filename.**ru**.xlf"). Once you selected the file, click "Import & Recycle" button in the dialog. You should get the 
 
 ## (Optional) Update project XLF files with translated XLF files
