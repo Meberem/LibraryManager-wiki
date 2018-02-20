@@ -4,7 +4,7 @@ The location of the sources and binary for the tool is TBD.
 
 Command-line usage of the tool is 
 
-|usage: |VsctToXliff.exe <sourcefile.vsct> <xliff dir> [--generatexlf | --generatevsct].|
+|usage: |```VsctToXliff.exe <sourcefile.vsct> <xliff dir> [--generatexlf | --generatevsct].```|
 
 |--generatexlf | This will create xlf files for all VS locales in the xliff dir, overwriting any existing files!|
 |:-- | --:|
