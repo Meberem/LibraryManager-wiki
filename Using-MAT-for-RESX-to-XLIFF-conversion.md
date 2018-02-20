@@ -79,4 +79,6 @@ You will also get new German RESX file generated as well:
 
 ![Generated Translation RESX](./images/GeneratedTranslationResx.png)
 
-Now you can bring your Add Translation Languages dialog again and finish adding all languages (cs, de, es, fr, it, ja, ko, pl, pt-BR, ru, tr, zh-Hans, zh-Hant). 
+Now you can bring your Add Translation Languages dialog again and finish adding all languages (cs, de, es, fr, it, ja, ko, pl, pt-BR, ru, tr, zh-Hans, zh-Hant). You can add them all at once, without dismissing the dialog. At the end, your project should look something like this:
+
+![All Languages Added](./images/AllLanguagesAdded.png)
