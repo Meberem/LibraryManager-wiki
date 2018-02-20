@@ -119,4 +119,4 @@ In your project, select the XLF file to update (e.g. somefile.ru.xlf) and use Mu
 
 Click Add, then navigate to the translated XLF file (e.g. Russian translation if you selected "filename.**ru**.xlf"). Once you selected the file, click "Import & Recycle" button in the dialog. You should get a message that resources were imported successfully. 
 
-Now build the project and open the translated RESX file (e.g. filename.ru.resx). You should see localized strings in your RESX file.
+Now build the project and open the translated RESX file (e.g. filename.ru.resx). You should see localized strings in your RESX file. Build the project will produce satellite assemblies to be included into the VSIX. 
