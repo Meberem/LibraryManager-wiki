@@ -56,3 +56,19 @@ Make sure to save your csproj at this point. You are done enabling MAT for this 
 If something goes wrong, you may get an error. Google is your friend in that case.
 
 ![MAT Output Window - Error](./images/MATError.png)
+
+## Add Translation Languages
+
+Once you have MAT enabled, adding translation languages is the next step. At this point, you should have a new context menu item when you select your project in Solution Explorer - Multilingual App Toolkit. Select that, and then select Add Translation Languages:
+
+![Add Translation Languages](./images/AddTranslationLanguages.png)
+
+You might get an error message like below
+
+![Translation Provider Manager Issue](./images/TranslationProviderManagerIssue.png)
+
+Click OK to dismiss it. You should get the following dialog for language selection
+
+![Translation Languages](./images/TranslationLanguagesDialog.png)
+
+Use it to select the desired languages. Start with German (de). You can use the Search box to type in the language name or abbreviation as shown above. 
