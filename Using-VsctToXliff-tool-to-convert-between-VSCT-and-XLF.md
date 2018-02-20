@@ -19,4 +19,9 @@ Running the tool with ```--generatexlf``` option and pointing to the English VSC
 
 ## Producing translated VSCT files
 
-Once the vendors are done translating the XLF files and check them back into the project, the next step is to generate 
+Once the vendors are done translating the XLF files and check them back into the project, the next step is to generate localized VSCT files from the localized XLF files. The same tool accomplishes that with the ```---generatevsct``` option. As of right now, simply replace the VSCT files in the project and rebuild.
+
+## Setting up your project to support localized VSCT files
+
+This is already done for LibMan, but may need to be done for a new project.
+
