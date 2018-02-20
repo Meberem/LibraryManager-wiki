@@ -10,3 +10,13 @@ usage: ```VsctToXliff.exe <sourcefile.vsct> <xliff dir> [--generatexlf | --gener
 |:-- |:--|
 |--generatexlf | This will create xlf files for all VS locales in the xliff dir, overwriting any existing files!|
 |--generatevsct | This will create vsct files for all VS locales in the same dir as the sourecfile.vsct, overwriting any existing files!|
+
+We may possibly further customize the tool to allow preservation of the already translated text.
+
+## Producing XLF files
+
+Running the tool with ```--generatexlf``` option and pointing to the English VSCT file, we generate the translation XLF files (e.g. VSCommands.ru.xlf). Once the generated XLF files are checked in into your project, it's ready to be localized by the loc team.
+
+## Producing translated VSCT files
+
+Once the vendors are done translating the XLF files and check them back into the project, the next step is to generate 
