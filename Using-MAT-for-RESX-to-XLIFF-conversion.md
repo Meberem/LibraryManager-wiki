@@ -82,3 +82,29 @@ You will also get new German RESX file generated as well:
 Now you can bring your Add Translation Languages dialog again and finish adding all languages (cs, de, es, fr, it, ja, ko, pl, pt-BR, ru, tr, zh-Hans, zh-Hant). You can add them all at once, without dismissing the dialog. At the end, your project should look something like this:
 
 ![All Languages Added](./images/AllLanguagesAdded.png)
+
+Check in the modified project into the loc branch in Git. At this point your project is ready for loc team vendors to pick up the XLF files.
+
+## (Optional) Machine-Translate Generated XLF files
+
+One of the nice features of XLF is that they can be machine-translated. Simply drop the generated XLF file(s) to 
+
+\\kimkim60\BlackBox\Hackathon\Service-CE\DROP\[your alias]\[culture] (e.g. \\kimkim60\BlackBox\Hackathon\Service-CE\DROP\alexgav\ru)
+
+wait a minute or two, and pick them up from 
+
+\\kimkim60\BlackBox\Hackathon\Service-CE\PICKUP\[your alias]\[culture] (e.g. \\kimkim60\BlackBox\Hackathon\Service-CE\PICKUP\alexgav\ru)
+
+You should see translated text in the picked up XLF file. Normally vendors will manually go over the translated text and fix it up as needed. 
+
+## (Optional) Update project XLF files with translated XLF files
+
+Normally this step is done by the loc team, but it's great to make sure that your setup is working correctly.
+
+In your project, select the XLF file to update (e.g. somefile.ru.xlf) and use Multilingual App Resources context menu in Solution Explorer to execute ```Import/Recycle Translations...``` command. That will bring up the following dialog
+
+![Import Translations Dialog](./images/ImportTranslationsDialog.png)
+
+Click Add, then navigate to the translated XLF file (e.g. Russian translation if you selected "filename.**ru**.xlf"). 
+
+## (Optional) Update project XLF files with translated XLF files
