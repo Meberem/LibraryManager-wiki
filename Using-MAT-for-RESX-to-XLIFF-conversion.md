@@ -117,6 +117,6 @@ In your project, select the XLF file to update (e.g. somefile.ru.xlf) and use Mu
 
 ![Import Translations Dialog](./images/ImportTranslationsDialog.png)
 
-Click Add, then navigate to the translated XLF file (e.g. Russian translation if you selected "filename.**ru**.xlf"). Once you selected the file, click "Import & Recycle" button in the dialog. You should get the 
+Click Add, then navigate to the translated XLF file (e.g. Russian translation if you selected "filename.**ru**.xlf"). Once you selected the file, click "Import & Recycle" button in the dialog. You should get a message that resources were imported successfully. 
 
-## (Optional) Update project XLF files with translated XLF files
+Now build the project and open the translated RESX file (e.g. filename.ru.resx). You should see localized strings in your RESX file.
