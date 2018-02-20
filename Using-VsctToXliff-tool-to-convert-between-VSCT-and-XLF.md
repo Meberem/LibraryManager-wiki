@@ -6,6 +6,7 @@ Command-line usage of the tool is
 
 usage: ```VsctToXliff.exe <sourcefile.vsct> <xliff dir> [--generatexlf | --generatevsct].```
 
+|||
 |--generatexlf | This will create xlf files for all VS locales in the xliff dir, overwriting any existing files!|
 |:-- | --:|
 |--generatevsct | This will create vsct files for all VS locales in the same dir as the sourecfile.vsct, overwriting any existing files!|
