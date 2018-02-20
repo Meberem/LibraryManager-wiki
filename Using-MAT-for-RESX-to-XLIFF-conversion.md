@@ -71,4 +71,12 @@ Click OK to dismiss it. You should get the following dialog for language selecti
 
 ![Translation Languages](./images/TranslationLanguagesDialog.png)
 
-Use it to select the desired languages. Start with German (de). You can use the Search box to type in the language name or abbreviation as shown above. 
+Use it to select the desired languages. Start with German (de). You can use the Search box to type in the language name or abbreviation as shown above. Once German is shown, make sure to check its checkbox and click OK. You will get MultilingualResources folder added to your project, and your first XLF file for German translation generated from the RESX file in your project:
+
+![Multilingual Resources Folder](./images/MultilingualResourcesFolder.png)
+
+You will also get new German RESX file generated as well:
+
+![Generated Translation RESX](./images/GeneratedTranslationResx.png)
+
+Now you can bring your Add Translation Languages dialog again and finish adding all languages (cs, de, es, fr, it, ja, ko, pl, pt-BR, ru, tr, zh-Hans, zh-Hant). 
