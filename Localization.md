@@ -33,4 +33,8 @@ Unfortunately VSCT file format is not support by the MAT 4.0 tool (or any other 
 
 ## Building the localized VSIX
 
-Building the localized VSIX is unfortunately a bit complicated since LibMan projects use the new csproj file format, which doesn't include many of the standard C# targets that VSIX build tasks expect to exist. For example, SatelliteDllsProjectOutputGroup target doesn't exist in the new project system. So we will have to do some manual customization of our VSIX csproj to allow inclusion and deployment of the satellite DLLs.
+Building the localized VSIX is unfortunately a bit complicated since LibMan projects use the new csproj file format, which doesn't include many of the standard C# targets that VSIX build tasks expect to exist. For example, SatelliteDllsProjectOutputGroup target doesn't exist in the new project system. So we will have to do some manual customization of our VSIX csproj to allow inclusion and deployment of the satellite DLLs. I ended up using 
+```
+<VSIXSourceItem ... />
+```
+to include satellite assemblies per advice from Jacques. 
