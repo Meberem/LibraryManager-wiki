@@ -27,7 +27,9 @@ Please see [Using MAT for RESX to XLIFF conversion](Using-MAT-for-RESX-to-XLIFF-
 ## VSCT file localization using VsctToXliff tool
 
 Unfortunately VSCT file format is not support by the MAT 4.0 tool (or any other publicly available tool for that matter). So we chose to utilize VsctToXliff tool written by NodeJS Tooling team. See https://github.com/Microsoft/nodejstools/tree/v1.3.x/Common/Tools/VsctToXliff
- for the original sources. I (alexgav) made slight changes to the tool to make generated xlf machine-translatable and editable with MAT Editor. The location of the modified sources is TBD.
+ for the original sources. I (alexgav) made slight changes to the tool to make generated xlf machine-translatable and editable with MAT Editor. The location of the modified sources is common\tools\VsctToXliff. See
+
+[Using Using-VsctToXliff tool to convert between VSCT and XLF](Using-VsctToXliff-tool-to-convert-between-VSCT-and-XLF)
 
 ## Building the localized VSIX
 
