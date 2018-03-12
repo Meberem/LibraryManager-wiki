@@ -5,7 +5,7 @@ Welcome to the Library Manager wiki!
 - General usage
   - Visual Studio 
   - MSBuild support
-- [libman.json reference](library.json-reference)
+- [libman.json reference](libman.json-reference)
 - Providers
   - [Cdnjs](cdnjs-provider)
   - [File system](file-system-provider)
