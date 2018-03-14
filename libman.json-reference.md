@@ -7,16 +7,16 @@ This example shows a `libman.json` file with 2 libraries defined - one from the 
 {
   "version": "1.0",
   "defaultProvider": "cdnjs",
-  "packages": [
+  "defaultDestination": "js/lib",
+  "libraries": [
     {
-      "id": "jquery@3.2.1",
-      "path": "js/lib",
+      "library": "jquery@3.2.1",
       "files": [ "jquery.min.js" ]
     },
     {
       "provider": "filesystem",
-      "id": "../../path/to/file.js",
-      "path": "js/lib",
+      "library": "../../path/to/file.js",
+      "destination": "js/files",
       "files": ["file.js"]
     }
   ]
@@ -33,25 +33,31 @@ Specifies the version of the `libman.json` syntax being used on the file. The on
 ### defaultProvider (optional)
 Use this field to specify a default provider to avoid having to specify the provider in the individual library entries (see below). If a package has a `"provider"` property specified, then that will always win over the `"defaultProvider"`.
 
+**Type**: string
+
+### defaultProvider (optional)
+Use this field to specify a default provider to avoid having to specify the provider in the individual library entries (see below). If a package has a `"provider"` property specified, then that will always win over the `"defaultProvider"`.
+
+
 **Type**: string (a valid provider id)
 
-### packages
+### libraries
 This is an array of objects describing an individual library.
 
 **Type**: array of library objects
 
-### packages.provider
+### libraries.provider
 A string matching the id of a known provider. This field is required if the root property `"defaultProvider"` is not set.
 
 **Type**: string
 
-### packages.id (required)
-The `id` is a identifier for a library that is uniquely identifiable by the specified provider.
+### libraries.library (required)
+The `library` is a identifier for a library that is uniquely identifiable by the specified provider.
 
 **Type**: string
 
-### packages.path (required)
-The path is a folder path relative to the `libman.json` file. It represents the folder you want the library files copied to.
+### packages.destination (required)
+The destination is a folder path relative to the `libman.json` file. It represents the folder you want the library files copied to.
 
 **Type**: string
 
