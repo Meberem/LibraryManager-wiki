@@ -35,8 +35,8 @@ Use this field to specify a default provider to avoid having to specify the prov
 
 **Type**: string
 
-### defaultProvider (optional)
-Use this field to specify a default provider to avoid having to specify the provider in the individual library entries (see below). If a package has a `"provider"` property specified, then that will always win over the `"defaultProvider"`.
+### defaultDestination (optional)
+Use this field to specify a default destination to avoid having to specify the destination in the individual library entries (see below). If a package has a `"destination"` property specified, then that will always win over the `"defaultProvider"`.
 
 
 **Type**: string (a valid provider id)
