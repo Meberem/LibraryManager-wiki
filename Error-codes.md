@@ -13,13 +13,13 @@ Unable to resolve source. This usually happens when the `id` of the library is u
 Could not write file. The host (e.g Visual Studio) was not able to write the file into the project. It could be because of missing file permissions.
 
 ## LIB004
-Manifest malformed. The `library.json` file contains syntax errors.
+Manifest malformed. The `libman.json` file contains syntax errors.
 
 ## LIB005
-The `"path"` property is undefined in the `library.json` file.
+The `"destination"` property is undefined in the `libman.json` file.
 
 ## LIB006
-The `"id"` property is undefined in the `library.json` file.
+The `"library"` property is undefined in the `libman.json` file.
 
 ## LIB007
-The `"provider"` property is undefined in the `library.json` file.
+The `"provider"` property is undefined in the `libman.json` file.
