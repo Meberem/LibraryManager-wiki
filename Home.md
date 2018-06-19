@@ -4,6 +4,11 @@ Welcome to the Library Manager wiki!
 
 ### How to Acquire and Install
 
+LibMan tooling comes as part of the Web Development workload in Visual Studio 2017.<br>
+Download [Visual Studio 2017](https://www.visualstudio.com/vs/) and choose the "Web Development" workload during installation (or modify an existing instance of Visual Studio 2017).
+
+The LibMan CLI (DotNet tool) can be used separately and can be downloaded from NuGet.
+
 ### Using LibMan in Visual Studio
 - UI elements
   - boxes
