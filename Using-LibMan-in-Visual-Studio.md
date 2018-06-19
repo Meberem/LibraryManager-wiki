@@ -1,4 +1,4 @@
-This topic discusses how to use LibMan from inside Visual Studio
+This topic discusses how to use LibMan from inside Visual Studio.
 
 Various elements include:
 - UI components
