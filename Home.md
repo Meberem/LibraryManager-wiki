@@ -22,18 +22,11 @@ The LibMan Command Line Interface (DotNet CLI tool) can be used separately and c
 
 ## How to use Library Manager (LibMan)
 
-### Using LibMan in Visual Studio
-- UI elements
-  - boxes
-- Editing the libman.json (IntelliSense)
-  - IntelliSense, etc
-- Actions (Install/Restore/Clean)
-  - Notifications
-  - Error output
+See the following pages for information on how to use LibMan in the various supported scenarios.
 
-### Using LibMan from the Command Line
-
-### Using LibMan in a CI build
+- [Using LibMan in Visual Studio](libman-vs)
+- [Using LibMan from the Command Line](libman-cli)
+- [Using LibMan in a CI build](libman-ci)
 
 ## Reference
 
