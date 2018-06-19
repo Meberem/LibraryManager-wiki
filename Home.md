@@ -18,7 +18,7 @@ LibMan is not a package management system. If you’re happily using npm/yarn/(o
 LibMan tooling comes as part of the Web Development workload in Visual Studio 2017.<br>
 Download [Visual Studio 2017](https://www.visualstudio.com/vs/) and choose the "Web Development" workload during installation (or modify an existing instance of Visual Studio 2017).
 
-The LibMan CLI (DotNet tool) can be used separately and can be downloaded from NuGet.
+The LibMan Command Line Interface (DotNet CLI tool) can be used separately and can be downloaded from NuGet.
 
 ## How to use Library Manager (LibMan)
 
