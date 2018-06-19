@@ -1,0 +1,1 @@
+This topic covers how to use LibMan in a continuous integration build.
