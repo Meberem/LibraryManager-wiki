@@ -2,7 +2,7 @@
 
 Library Manager (“LibMan” for short) is Visual Studio’s client-side library acquisition tool. It provides a lightweight, simple mechanism that helps users find and fetch common library files from external sources (such as CDNJS or UnPkg).
 
-![Library Manager in Visual Studio 2017](https://user-images.githubusercontent.com/17131343/41614256-d630a544-73ac-11e8-8de8-8ce8f49759f1.png)
+![Library Manager in Visual Studio 2017](https://user-images.githubusercontent.com/17131343/41614358-2bd7fa2e-73ad-11e8-9e86-571bad177d47.png)
 
 ### Why use LibMan?
 * If your project does not require additional tools (like Node, npm, Gulp, Grunt, WebPack, etc) and you simply want to acquire a couple of files, then LibMan might be for you.
