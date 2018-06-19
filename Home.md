@@ -20,6 +20,8 @@ Download [Visual Studio 2017](https://www.visualstudio.com/vs/) and choose the "
 
 The LibMan CLI (DotNet tool) can be used separately and can be downloaded from NuGet.
 
+## How to use Library Manager (LibMan)
+
 ### Using LibMan in Visual Studio
 - UI elements
   - boxes
@@ -33,25 +35,18 @@ The LibMan CLI (DotNet tool) can be used separately and can be downloaded from N
 
 ### Using LibMan in a CI build
 
+## Reference
+
 ### LibMan Manifest (libman.json)
+- [libman.json reference](libman.json-reference)
 
 ### Providers
 - What are providers? How to choose?
-- CDNJS
+- [Cdnjs](cdnjs-provider)
 - UnPkg
-- File System
+- [File system](file-system-provider)
 
-### Error Codes
-
-## Other links
-
-- General usage
-  - Visual Studio 
-  - MSBuild support
-- [libman.json reference](libman.json-reference)
-- Providers
-  - [Cdnjs](cdnjs-provider)
-  - [File system](file-system-provider)
+### Other References
 - [Error codes](error-codes)
 - [Extensibility](Extensibility)
 - [Localization](Localization)
