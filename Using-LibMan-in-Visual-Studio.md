@@ -32,9 +32,7 @@ You can add files to your web project two ways:
 - To include all files in the specified library, set the radio button to "Include all library files".
 - To specify a smaller set of files from the library, choose the "Select library files" option, which will enable the file selector tree with a smaller set selected by default.<br>
   Use the checkboxes to the left of the files to select the files to download.
-
 ![Add Client-Side Libraries dialog with query files selected](https://user-images.githubusercontent.com/17131343/41642784-2499ab88-741e-11e8-9b62-db503d17b660.png)
-
 - Specify the location of the new files within your web project. (Where do you want the files to go?)<br>
   Note: It is recommended to keep each library in a separate folder. The default location suggested for the new files will be a folder with the same name as the library under the directory the dialog was launched from.<br>
   Modify the **Target Location** as necessary.
