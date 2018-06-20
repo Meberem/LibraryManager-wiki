@@ -37,7 +37,7 @@ You can add files to your web project two ways:
 
 ![Add Client-Side Libraries dialog with query files selected](https://user-images.githubusercontent.com/17131343/41642784-2499ab88-741e-11e8-9b62-db503d17b660.png)
 
-- Specify the location of the new files.<br>
+- Specify the location of the new files within your web project. (Where do you want the files to go?)<br>
   Note: It is recommended to keep each library in a separate folder. The default location suggested for the new files will be a folder with the same name as the library under the directory the dialog was launched from.<br>
   Modify the Specified Location as necessary.
 - Press **Install**.<br>
