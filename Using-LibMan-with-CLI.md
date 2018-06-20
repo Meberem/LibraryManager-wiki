@@ -70,7 +70,7 @@ Arguments:
 
 Options:
 <table>
-<tr><td>  --help|-h</td><td>Show help information</td></tr>
+<tr><td width="200px">  --help|-h</td><td>Show help information</td></tr>
 <tr><td>  --verbosity</td><td>Set the verbosity of output (eg. "normal", "detailed", "quiet")</td></tr>
 <tr><td>  --provider|-p</td><td>Provider to use (if not specified, the default provider will be used)</td></tr>
 <tr><td>  --destination|-d</td><td>Location to install the library (if not specified, the default destination location will be used)</td></tr>
