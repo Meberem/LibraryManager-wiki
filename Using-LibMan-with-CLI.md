@@ -88,3 +88,24 @@ Examples:
 - libman install jquery --provider cdnjs --destination wwwroot\scripts\jquery --files jquery.min.js
 - libman install myCalendar --provider filesystem --files calendar.js --files calendar.css
 
+## Uninstall
+
+Usage: libman uninstall [arguments] [options]
+
+Arguments:
+- libraryId  Library to uninstall
+
+Options:
+<table>
+<tr><td>  --help|-h</td><td>Show help information</td></tr>
+<tr><td>  --verbosity</td><td>Set the verbosity of output (eg. "normal", "detailed", "quiet")</td></tr>
+</table>
+
+Remarks:<br>
+Error if no libman.json in current folder<br>
+Error if specified library doesn't exist<br>
+If there's more than one library with the same libraryId, you'll be prompted to choose.<br>
+
+Examples:
+- libman uninstall jquery
+- libman uninstall jquery@3.3.1
