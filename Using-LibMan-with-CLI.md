@@ -138,3 +138,36 @@ Downloads all files from provider and saves them to configured destination.<br>
 Will throw error if no libman.json in current folder<br>
 If a library specifies a provider, it will override the defaultProvider<br>
 If a library specifies a destination, it will override the defaultDestination<br>
+
+## Update
+
+Usage: libman update [arguments] [options]
+
+Arguments:
+<table>
+<tr>
+<td width="200px">libraryId</td>
+<td>Library to update</td>
+</tr>
+</table>
+
+Options:
+<table>
+<tr><td width="200px">  --help|-h</td><td>Show help information<td></tr>
+<tr><td>  --verbosity</td><td>Set the verbosity of output (eg. "normal", "detailed", "quiet")<td></tr>
+<tr><td>  -pre</td><td>If specified, the latest pre-release version of the library will be downloaded (where applicable)<td></tr>
+<tr><td>  --to</td><td>The version to update the library to (needs complete libraryid for the provider)<td></tr>
+</table>
+
+Remarks:<br>
+Updates the specified library to the latest version.<br>
+Error if no libman.json in current folder<br>
+Error if specified library doesn't exist<br>
+If there's more than one library with the same libraryId, you'll be prompted to choose.<br>
+
+Examples:
+-    libman update jquery
+-    libman update jquery --to jquery@3.3.1
+-    libman update jquery@2.2.0
+-    libman update jquery -pre
+
