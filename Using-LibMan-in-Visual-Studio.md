@@ -17,6 +17,32 @@ Open a Web Project in [Visual Studio 2017](https://visualstudio.com/vs) (v15.8 P
 
 ! If you're looking to get started with a new Web Project, see the [Getting Started - Razor MVC guide](getting-started-with-web).
 
+You can add files to your web project two ways:
+1. Use the "Add Client-Side Libraries" dialog
+2. Edit the libman.json file in the root of the project
+
+## Add Client-Side Libraries
+
+- Choose a folder that you want to add files to (or a parent thereof).
+- Right-click the folder and select **Add->Client-Side Libraries...**
+  The "Add Client-Side Libraries" dialog will open with focus in the **Library** field.
+  [Insert image here of blank Add Files dialog]
+- Type the name of a library you want to fetch (ie. "jquery", "twitter-bootstrap")
+  IntelliSense will provide a list of libraries starting with the name given.
+- Select the correct item then press Tab.
+  The library ID will be completed with the "@" symbol followed by the latest version known to that provider.
+  Focus will move to the files selection radio buttons.
+- To include all files in the specified library, set the radio button to "Include all library files".
+- To specify a smaller set of files from the library, choose the "Select library files" option, which will enable the file selector tree with a smaller set selected by default.
+- Use the checkboxes to the left of the files to select the files to download.
+  [Insert image of Add Files dialog with 3 files selected.]
+- Specify the location of the new files.
+  Note: It is recommended to keep each library in a separate folder. The default location suggested for the new files will be a folder with the same name as the library under the directed the dialog was launched from.
+  Modify the Specified Location as necessary.
+- Press **Install**.
+  The configuration will be written to libman.json in the project root and the files will be downloaded into the project.
+
+## UI Elements
 Various elements include:
 - UI components
   - Add New Library
