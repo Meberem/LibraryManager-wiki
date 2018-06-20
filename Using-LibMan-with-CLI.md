@@ -153,10 +153,10 @@ Arguments:
 
 Options:
 <table>
-<tr><td width="200px">  --help|-h</td><td>Show help information<td></tr>
-<tr><td>  --verbosity</td><td>Set the verbosity of output (eg. "normal", "detailed", "quiet")<td></tr>
-<tr><td>  -pre</td><td>If specified, the latest pre-release version of the library will be downloaded (where applicable)<td></tr>
-<tr><td>  --to</td><td>The version to update the library to (needs complete libraryid for the provider)<td></tr>
+<tr><td width="200px">  --help|-h</td><td>Show help information</td></tr>
+<tr><td>  --verbosity</td><td>Set the verbosity of output (eg. "normal", "detailed", "quiet")</td></tr>
+<tr><td>  -pre</td><td>If specified, the latest pre-release version of the library will be downloaded (where applicable)</td></tr>
+<tr><td>  --to</td><td>The version to update the library to (needs complete libraryid for the provider)</td></tr>
 </table>
 
 Remarks:<br>
@@ -167,7 +167,6 @@ If there's more than one library with the same libraryId, you'll be prompted to 
 
 Examples:
 -    libman update jquery
--    libman update jquery --to jquery@3.3.1
--    libman update jquery@2.2.0
+-    libman update jquery --to 3.3.1
 -    libman update jquery -pre
 
