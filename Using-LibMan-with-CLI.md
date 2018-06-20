@@ -6,8 +6,8 @@ Usage: libman [options] [command]
 
 Options:
 <table>
-<tr><td width="200px">--help|-h</td><td>Show help information</td></tr>
-<tr><td>--version</td><td>Show version information</td></tr>
+<tr><td width="200px"><a href="#help-flag">--help|-h</a></td><td>Show help information</td></tr>
+<tr><td><a href="#version-flag">--version</a></td><td>Show version information</td></tr>
 </table>
 
 The following commands are available on the LibMan tool:
@@ -15,12 +15,12 @@ The following commands are available on the LibMan tool:
 Commands:
 <table>
 <tr><td><a href="#init">init</a></td><td>Create a new libman.json</td></tr>
-<tr><td>install</td><td>Add a library definition to the LibMan.json file, and download the library to the specified location</td></tr>
-<tr><td>uninstall</td><td>Deletes all files for the specified library from their specified destination, then removess the specified library definition from libman.json</td></tr>
-<tr><td>restore</td><td>Downloads all files from provider and saves them to specified destination</td></tr>
-<tr><td>update</td><td>Updates the specified library</td></tr>
-<tr><td>clean</td><td>Deletes all library files defined in libman.json from the project</td></tr>
-<tr><td>cache</td><td>List or clean libman cache contents</td></tr>
+<tr><td><a href="#install">install</a></td><td>Add a library definition to the LibMan.json file, and download the library to the specified location</td></tr>
+<tr><td><a href="#uninstall">uninstall</a></td><td>Deletes all files for the specified library from their specified destination, then removess the specified library definition from libman.json</td></tr>
+<tr><td><a href="#restore">restore</a></td><td>Downloads all files from provider and saves them to specified destination</td></tr>
+<tr><td><a href="#update">update</a></td><td>Updates the specified library</td></tr>
+<tr><td><a href="#clean">clean</a></td><td>Deletes all library files defined in libman.json from the project</td></tr>
+<tr><td><a href="#cache">cache</a></td><td>List or clean libman cache contents</td></tr>
 <table>
 
 Use "libman [command] --help" for more information about a command.
@@ -205,8 +205,8 @@ Options:
 
 Commands:
 <table>
-<tr><td>clean</td><td>Delete all files from the local machine's LibMan cache.</td></tr>
-<tr><td>list</td><td>Display a list of all libraries that are stored in the local machine’s LibMan cache.</td></tr>
+<tr><td><a href="#cache-clean">clean</a></td><td>Delete all files from the local machine's LibMan cache.</td></tr>
+<tr><td><a href="#cache-list">list</a></td><td>Display a list of all libraries that are stored in the local machine’s LibMan cache.</td></tr>
 </table>
 
 ### Cache Clean
