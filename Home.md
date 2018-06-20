@@ -1,6 +1,6 @@
 ## What is Library Manager (LibMan)?
 
-LibMan is a tool that helps you download common web libraries from the Internet and include them in your web project.
+LibMan is a tool that helps you download common libraries from the Internet to use in your web project.
 
 Library Manager (“LibMan” for short) is Visual Studio’s client-side library acquisition tool. It's goal is to provide a lightweight, simple mechanism that helps users find and fetch common library files from external sources (such as CDNJS or UnPkg) and place them in the right location within your web application.
 
