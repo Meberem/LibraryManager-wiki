@@ -2,7 +2,12 @@ This topic discusses how to use LibMan from inside Visual Studio.
 
 # Overview of LibMan in Visual Studio
 
-Visual Studio has built-in support for using LibMan in Web Projects, with UI tooling - including a window that helps you add files to your project, as well as rich editing support for the [LibMan manifest file](libman-manifest) (libman.json).
+Visual Studio has built-in support for using LibMan in Web Projects, including:
+
+- support for configuring and running LibMan restore operation on build
+- menu items for triggering LibMan **restore** and **clean** operations
+- dialog that helps you search for libraries and add the files to your project
+- editing support for the [LibMan manifest file](libman-manifest) (libman.json)
 
 Though LibMan can work from any folder or any project type (via CLI or a CI build script), within Visual Studio, LibMan features are only available Web Projects.
 
