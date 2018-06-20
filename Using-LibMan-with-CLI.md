@@ -19,15 +19,6 @@ Commands:
 
 # Command Details
 
-## Version flag
-
-Syntax: --version
-
-Prints the current version of the LibMan executable.
-
-Examples:
-- libman --version
-
 ## Help flag
 
 Syntax: --help|-h
@@ -38,6 +29,15 @@ If parameter supplied, will print the full details of the supplied verb.
 Examples:
 - libman --help
 - libman -h
+
+## Version flag
+
+Syntax: --version
+
+Prints the current version of the LibMan executable.
+
+Examples:
+- libman --version
 
 ## Init
 
