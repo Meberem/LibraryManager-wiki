@@ -41,7 +41,9 @@ You can add files to your web project two ways:
   Note: It is recommended to keep each library in a separate folder. The default location suggested for the new files will be a folder with the same name as the library under the directory the dialog was launched from.<br>
   Modify the **Target Location** as necessary.
 - Press **Install**.<br>
-  The configuration will be written to libman.json in the project root and the files will be downloaded into the project.
+  The configuration will be written to libman.json in the project root and the files will be downloaded into the project.<br>
+- Messages will appear in the Output window
+![Library Manager output in the Visual Studio Output window](https://user-images.githubusercontent.com/17131343/41643377-d6e4e32e-741f-11e8-9d64-9b62a952f2af.png)
 
 ## UI Elements
 Various elements include:
