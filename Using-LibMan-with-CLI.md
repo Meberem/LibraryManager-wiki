@@ -60,3 +60,31 @@ Examples:
 - libman init --default-provider "cdnjs"
 - libman init --version "1.0"
 - libman init --version 1.0 --default-provider cdnjs --default-destination script\libman
+
+## Install
+
+Usage: libman install [arguments] [options]
+
+Arguments:
+- libraryId  Library to install
+
+Options:
+<table>
+<tr><td>  --help|-h</td><td>Show help information</td></tr>
+<tr><td>  --verbosity</td><td>Set the verbosity of output (eg. "normal", "detailed", "quiet")</td></tr>
+<tr><td>  --provider|-p</td><td>Provider to use (if not specified, the default provider will be used)</td></tr>
+<tr><td>  --destination|-d</td><td>Location to install the library (if not specified, the default destination location will be used)</td></tr>
+<tr><td>  --files</td><td>The files from the specified library to install (if not specified, all files from the library will be installed)</td></tr>
+</table>
+
+Remarks:<br>
+Initializes a libman.json if one does not exist.<br>
+If no default provider exists, --provider option is required.<br>
+If no default destination exists, --destination option is required.<br>
+If no files are specified, the entire library is included.<br>
+
+Examples:
+- libman install jquery@3.2.1
+- libman install jquery --provider cdnjs --destination wwwroot\scripts\jquery --files jquery.min.js
+- libman install myCalendar --provider filesystem --files calendar.js --files calendar.css
+
