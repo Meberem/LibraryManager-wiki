@@ -1,21 +1,30 @@
 This page provides a reference for the LibMan CLI (Library Manager Command Line Interface).
 
-# Commands
+# LibMan Commands
 
-The following verbs are available on the LibMan tool:
+Usage: libman [options] [command]
 
 Options:
-- --help|-h
-- --version
+<table>
+<tr><td width="200px">--help|-h</td><td>Show help information</td></tr>
+<tr><td>--version</td><td>Show version information</td></tr>
+</table>
+
+The following commands are available on the LibMan tool:
 
 Commands:
-- init
-- install
-- uninstall
-- restore
-- update
-- clean
-- cache
+<table>
+<tr><td><a href="#Init">init</a></td><td>Create a new libman.json</td></tr>
+<tr><td>install</td><td>Add a library definition to the LibMan.json file, and download the library to the specified location</td></tr>
+<tr><td>uninstall</td><td>Deletes all files for the specified library from their specified destination, then removess the specified library definition from libman.json</td></tr>
+<tr><td>restore</td><td>Downloads all files from provider and saves them to specified destination</td></tr>
+<tr><td>update</td><td>Updates the specified library</td></tr>
+<tr><td>clean</td><td>Deletes all library files defined in libman.json from the project</td></tr>
+<tr><td>cache</td><td>List or clean libman cache contents</td></tr>
+<table>
+
+Use "libman [command] --help" for more information about a command.
+
 
 # Command Details
 
