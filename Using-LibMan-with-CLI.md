@@ -21,7 +21,7 @@ Commands:
 
 ## Help flag
 
-Syntax: --help|-h
+Usage: --help|-h
 
 Prints a list of all available LibMan verbs.<br>
 If parameter supplied, will print the full details of the supplied verb.
@@ -32,7 +32,7 @@ Examples:
 
 ## Version flag
 
-Syntax: --version
+Usage: --version
 
 Prints the current version of the LibMan executable.
 
