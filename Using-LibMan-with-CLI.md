@@ -184,3 +184,54 @@ Remarks:<br>
 Deletes from the local project all library files defined in libman.json.<br>
 Deletes any folders that become empty after this operation.<br>
 
+## Cache
+
+Usage: libman cache [options] [command]
+
+Options:
+<table>
+<tr><td width="200px">  --help|-h</td><td>Show help information</td></tr>
+<tr><td>  --verbosity</td><td>Set the verbosity of output (eg. "normal", "detailed", "quiet")</td></tr>
+</table>
+
+Commands:
+<table>
+<tr><td>clean</td><td>Delete all files from the local machine's LibMan cache.</td></tr>
+<tr><td>list</td><td>Display a list of all libraries that are stored in the local machine’s LibMan cache.</td></tr>
+</table>
+
+### Cache Clean
+
+Usage: libman cache clean [arguments] [options]
+
+Arguments:
+<table>
+<tr>
+<td width="200px">provider</td>
+<td>Provider for which the cache files should be cleaned.</td>
+</tr>
+</table>
+
+Options:
+<table>
+<tr><td width="200px">  --help|-h</td><td>Show help information</td></tr>
+<tr><td>  --verbosity</td><td>Set the verbosity of output (eg. "normal", "detailed", "quiet")</td></tr>
+</table>
+
+Remarks:<br>
+Delete all files from the local machine's LibMan cache. (This is the local cache that's usually kept in the user's home directory.)
+
+### Cache List
+
+Usage: libman cache list [arguments] [options]
+
+Options:
+<table>
+<tr><td width="200px">  --help|-h</td><td>Show help information</td></tr>
+<tr><td>  --verbosity</td><td>Set the verbosity of output (eg. "normal", "detailed", "quiet")</td></tr>
+<tr><td>  --files</td><td>List files that are cached for each library.</td></tr>
+<tr><td>  --libraries</td><td>List the libraries cached for each provider.</td></tr>
+</table>
+
+Remarks:<br>
+Lists the libraries in the local machine's LibMan cache. (This is the local cache that's usually kept in the user's home directory.)
