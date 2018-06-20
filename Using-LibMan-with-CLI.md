@@ -13,8 +13,8 @@ Commands:
 - install
 - uninstall
 - restore
-- clean
 - update
+- clean
 - cache
 
 # Command Details
@@ -169,4 +169,18 @@ Examples:
 -    libman update jquery
 -    libman update jquery --to 3.3.1
 -    libman update jquery -pre
+
+## Clean
+
+Usage: libman clean [options]
+
+Options:
+<table>
+<tr><td width="200px">  --help|-h</td><td>Show help information</td></tr>
+<tr><td>  --verbosity</td><td>Set the verbosity of output (eg. "normal", "detailed", "quiet")</td></tr>
+</table>
+
+Remarks:<br>
+Deletes from the local project all library files defined in libman.json.<br>
+Deletes any folders that become empty after this operation.<br>
 
