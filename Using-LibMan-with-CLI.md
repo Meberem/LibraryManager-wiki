@@ -14,7 +14,7 @@ The following commands are available on the LibMan tool:
 
 Commands:
 <table>
-<tr><td><a href="#Init">init</a></td><td>Create a new libman.json</td></tr>
+<tr><td><a href="#init">init</a></td><td>Create a new libman.json</td></tr>
 <tr><td>install</td><td>Add a library definition to the LibMan.json file, and download the library to the specified location</td></tr>
 <tr><td>uninstall</td><td>Deletes all files for the specified library from their specified destination, then removess the specified library definition from libman.json</td></tr>
 <tr><td>restore</td><td>Downloads all files from provider and saves them to specified destination</td></tr>
