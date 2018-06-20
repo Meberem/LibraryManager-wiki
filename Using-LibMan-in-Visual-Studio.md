@@ -1,6 +1,4 @@
-This topic discusses how to use LibMan from inside Visual Studio.
-
-# Overview of LibMan in Visual Studio
+# Visual Studio support for LibMan
 
 Visual Studio has built-in support for using LibMan in Web Projects, including:
 
@@ -42,6 +40,7 @@ You can add files to your web project two ways:
   Modify the **Target Location** as necessary.
 - Press **Install**.<br>
   The configuration will be written to libman.json in the project root and the files will be downloaded into the project.<br>
+![Web project in Solution Explorer with libman.json and jquery files added](https://user-images.githubusercontent.com/17131343/41643578-72bee682-7420-11e8-8008-66dfac003f6a.png)
 - Messages will appear in the Output window
 ![Library Manager output in the Visual Studio Output window](https://user-images.githubusercontent.com/17131343/41643377-d6e4e32e-741f-11e8-9d64-9b62a952f2af.png)
 
