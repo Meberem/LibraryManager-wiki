@@ -42,6 +42,16 @@ You can add files to your web project two ways:
 - Messages will appear in the Output window
 ![Library Manager output in the Visual Studio Output window](https://user-images.githubusercontent.com/17131343/41643377-d6e4e32e-741f-11e8-9d64-9b62a952f2af.png)
 
+## Edit the LibMan Manifest (libman.json)
+
+All LibMan operations are based on the content of the LibMan manifest, which is the libman.json at the root of the project.
+
+You can manually edit this file to define the library files that should be downloaded into the project.
+
+Visual Studio offers editing support for the libman.json file, including coloring, formatting, IntelliSense and schema validation.
+
+![Editing libman.json in Visual Studio](https://user-images.githubusercontent.com/17131343/41644228-4a552b50-7422-11e8-9a14-0704b5a60f17.png)
+
 ## UI Elements
 Various elements include:
 - UI components
