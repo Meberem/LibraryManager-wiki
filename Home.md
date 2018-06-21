@@ -27,13 +27,16 @@ The LibMan Command Line Interface (DotNet CLI tool) can be used separately and c
 See the following pages for information on how to use LibMan in the various supported scenarios.
 
 - [Using LibMan in Visual Studio](Using-LibMan-in-Visual-Studio)
-- [Using LibMan from the Command Line (LibMan CLI)](Using-LibMan-with-CLI)
+- [Using LibMan from the Command Line (LibMan CLI)](Using-LibMan-CLI)
 - [Using LibMan in a CI build](Using-LibMan-in-a-CI-Build)
 
 ## Reference
 
 ### LibMan Manifest (libman.json)
 - [libman.json reference](libman.json-reference)
+
+### LibMan CLI
+- [LibMan CLI reference](LibMan-CLI-Reference)
 
 ### Providers
 - What are providers? How to choose?
