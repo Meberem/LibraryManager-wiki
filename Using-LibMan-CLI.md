@@ -8,15 +8,19 @@ Before you can use LibMan from the CLI, you must first download and install the 
 
 ## Install library files
 
+Install library files into your folder/project.
+
 `> libman install jquery`
 
+Will install the latest version of of the library 'jquery' from the default provider.<br>
 Will prompt for default provider if there is no defaultProvider in libman.json.<br>
 Will prompt for destination if there is no defaultDestination in libman.json
 
 `> libman install jquery@2.2.0`
 
-Will install a specific version of the library.<br>
-Note: Syntax is [LibraryName]@[LibraryVersion] for all providers except File System.
+Will install a specific version of the library from the default provider.<br>
+
+Note: Syntax is _[LibraryName]@[LibraryVersion]_ for all providers except File System.
 
 `> libman install twitter-bootstrap --destination wwwroot/lib/bootstrap`
 
