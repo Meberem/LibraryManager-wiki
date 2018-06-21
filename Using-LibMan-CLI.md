@@ -12,7 +12,7 @@ If you need to install LibMan from an alternative location, use the following sy
 
 Will install LibMan CLI from C:\Temp\libman.1.0.94-g606058a278.nupgk
 
-For more information about working with DotNet global tools, refer to the official docs: [Install a Global Tool](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools#install-a-global-tool)
+For more information about working with DotNet global tools, refer to the official documentation on the Microsoft Doc site: [Install a Global Tool](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools#install-a-global-tool)
 
 ## Install library files
 
