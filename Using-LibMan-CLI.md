@@ -12,7 +12,7 @@ Install library files into your folder/project.
 
 `> libman install jquery`
 
-Will install the latest version of of the library 'jquery' from the default provider.<br>
+Will install the latest version of the library 'jquery' from the default provider.<br>
 Will prompt for default provider if there is no defaultProvider in libman.json.<br>
 Will prompt for destination if there is no defaultDestination in libman.json
 
