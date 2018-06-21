@@ -63,7 +63,7 @@ Will remove from your project all files that were restored.
 
 `> libman cache list`
 
-Will print a list of all libraries that exist in the cache
+Will print a list of all libraries that exist in the cache - by library name only.
 
 `> libman cache list --files`
 
