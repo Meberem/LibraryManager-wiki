@@ -28,11 +28,18 @@ Will install to the specified destination folder
 
 ## Restore
 
+To download and install all files defined in the libman.json, run the _restore_ command
+
 `> libman restore`
+
+Will fail if there is a conflict with libraries. (ie. more than one library defined with the same library name.)
 
 ## Uninstall
 
 `> libman uninstall jquery`
+
+Will remove jquery files from the folder they were restored to.<br>
+Will remove the library definition from libman.json
 
 ## Update
 
