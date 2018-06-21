@@ -8,9 +8,9 @@ Before you can use LibMan from the CLI, you must first download and install the 
 
 If you need to install LibMan from an alternative location, use the following syntax.
 
-`dotnet tool install -g libman --version 1.0.094-* --add-source C:\Temp\`
+`> dotnet tool install -g libman --version 1.0.094-* --add-source C:\Temp\`
 
-Will install LibMan CLI from C:\Temp\libman.1.0.094-[*].nupgk (where [*] represents any characters in the filename).
+Will install LibMan CLI from C:\Temp\libman.1.0.094-[\*].nupgk (where [\*] represents any characters in the filename).
 
 ## Install library files
 
