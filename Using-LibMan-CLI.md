@@ -1,6 +1,8 @@
-# Getting Started with LibMan CLI
+Here's a handy cheat sheet for getting started with LibMan CLI
 
 ## Get the LibMan global tool
+
+Before you can use LibMan from the CLI, you must first download and install the global tool via the dotnet CLI.
 
 `> dotnet tool install -g libman`
 
