@@ -1,10 +1,10 @@
-## Getting Started with LibMan CLI
+# Getting Started with LibMan CLI
 
-### Get the LibMan global tool
+## Get the LibMan global tool
 
 `> dotnet tool install -g libman`
 
-### Install library files
+## Install library files
 
 `> libman install jquery`
 
@@ -20,15 +20,15 @@ Note: Syntax is [LibraryName]@[LibraryVersion] for all providers except File Sys
 
 Will install to the specified destination folder
 
-### Restore
+## Restore
 
 `> libman restore`
 
-### Uninstall
+## Uninstall
 
 `> libman uninstall jquery`
 
-### Update
+## Update
 
 `> libman update jquery`
 
@@ -38,11 +38,13 @@ Will update to the latest version of the library.
 
 Will update to a specific version of the library.
 
-### Clean
+## Clean
 
 `> libman clean`
 
 Will remove from your project all files that were restored.
+
+## Cache
 
 ### Cache List
 
