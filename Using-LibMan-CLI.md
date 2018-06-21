@@ -12,6 +12,8 @@ If you need to install LibMan from an alternative location, use the following sy
 
 Will install LibMan CLI from C:\Temp\libman.1.0.94-g606058a278.nupgk
 
+For more information about working with DotNet global tools, refer to the official docs: [Install a Global Tool](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools#install-a-global-tool)
+
 ## Install library files
 
 Install library files into your folder/project.
@@ -21,6 +23,21 @@ Install library files into your folder/project.
 Will install the latest version of the library 'jquery' from the default provider.<br>
 Will prompt for default provider if there is no defaultProvider in libman.json.<br>
 Will prompt for destination if there is no defaultDestination in libman.json
+
+Creates (or updates) libman.json like so:
+
+<pre>
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "jquery@3.3.1",
+      "destination": "lib\\jquery"
+    }
+  ]
+}
+</pre>
 
 `> libman install jquery@2.2.0`
 
