@@ -22,7 +22,9 @@ You can add files to your web project two ways:
 ## Add Client-Side Libraries
 
 - Choose a folder that you want to add files to (or a parent thereof).
-- Right-click the folder and select **Add->Client-Side Libraries...**<br>
+- Right-click the folder and select **Add->Client-Side Librarie...**<br>
+  ![Add Client-side Libraries via Solution Explorer context menu](https://user-images.githubusercontent.com/17131343/42005703-baa86756-7a2a-11e8-8a7b-791b75835c6a.png)
+
   The "Add Client-Side Libraries" dialog will open with focus in the **Library** field.<br>
 - Type the name of a library you want to fetch (ie. "jquery", "twitter-bootstrap")<br>
   IntelliSense will provide a list of libraries starting with the name given.
