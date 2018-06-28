@@ -70,6 +70,8 @@ If your project has a valid LibMan config file (libman.json), the **Restore Clie
 While the operation is running, the Task Status Center icon on the status bar will be animated. Clicking the icon will open a pop-up window listing the known background tasks.<br>
 Messages will be sent to the Library Manager feed in the Output window as well as the status bar.
 
+![LibMan restore operation running in the Task Status Center](https://user-images.githubusercontent.com/17131343/42007109-f2d25bac-7a32-11e8-8a2b-bb6b5b4d165f.png)
+
 ## Clean library files from your project
 
 The **Clean Client-Side Libraries** operation will remove all the library files that were previously restored by LibMan in Visual Studio. So that additional non-library files are not unintentionally removed, the Clean operation will not delete whole directories. It will only remove the files that were included in the previous restore.
