@@ -56,9 +56,29 @@ Visual Studio offers editing support for the libman.json file, including colorin
 
 Note: LibMan only supports one version of each library from each provider. The libman.json file will be invalid if it contains two libraries with the same library name for a given provider.
 
+# LibMan Operations
+
+There are several Library Manager operations you can perform with Visual Studio.
+Some actions are available from the context menu on the LibMan config file (libman.json)
+
+![LibMan operations available on libman.json context menu](https://user-images.githubusercontent.com/17131343/42006690-473b4bac-7a30-11e8-8739-554995484f72.png)
+
 ## Restoring library files into your project
 
-If your project has a valid LibMan config file (libman.json), the **Restore** operation will download all the defined library files and place them in your project at the locations specified for each library.
+If your project has a valid LibMan config file (libman.json), the **Restore Client-Side Libraries** operation will download all the defined library files and place them in your project at the locations specified for each library.
+
+While the operation is running, the Task Status Center icon on the status bar will be animated. Clicking the icon will open a pop-up window listing the known background tasks.<br>
+Messages will be sent to the Library Manager feed in the Output window as well as the status bar.
+
+## Clean library files from your project
+
+The **Clean Client-Side Libraries** operation will remove all the library files that were previously restored by LibMan in Visual Studio. So that additional non-library files are not unintentionally removed, the Clean operation will not delete whole directories. It will only remove the files that were included in the previous restore.
+
+## Enable Restore Client-Side Libraries on Build
+
+If you'd like the project to be configured so that it automatically triggers a LibMan Restore operation whenever the project is built, you can choose to **Enable Restore Client-Side Libraries on Build...".<br>
+This will download a NuGet package and add it to your project so LibMan will run as part of the build operation for that project.
+
 
 
 ## UI Elements
