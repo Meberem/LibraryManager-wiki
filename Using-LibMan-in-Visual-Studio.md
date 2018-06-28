@@ -22,19 +22,19 @@ You can add files to your web project two ways:
 ## Add Client-Side Libraries
 
 - Choose a folder that you want to add files to (or a parent thereof).
-- Right-click the folder and select **Add->Client-Side Librarie...**<br>
-  ![Add Client-side Libraries via Solution Explorer context menu](https://user-images.githubusercontent.com/17131343/42005703-baa86756-7a2a-11e8-8a7b-791b75835c6a.png)
+- Right-click the folder and select **Add->Client-Side Library...**<br>
+  ![Add Client-side Library via Solution Explorer context menu](https://user-images.githubusercontent.com/17131343/42005703-baa86756-7a2a-11e8-8a7b-791b75835c6a.png)
 
-  The "Add Client-Side Libraries" dialog will open with focus in the **Library** field.<br>
+  The "Add Client-Side Library" dialog will open with focus in the **Library** field.<br>
 - Type the name of a library you want to fetch (ie. "jquery", "twitter-bootstrap")<br>
   IntelliSense will provide a list of libraries starting with the name given.
 - Select the correct item then press Tab.<br>
   The library ID will be completed with the "@" symbol followed by the latest version known to that provider.<br>
   Focus will move to the files selection radio buttons.
 - To include all files in the specified library, set the radio button to "Include all library files".
-- To specify a smaller set of files from the library, choose the "Select library files" option, which will enable the file selector tree with a smaller set selected by default.<br>
+- To specify a smaller set of files from the library, choose the "Choose specific files:" option, which will enable the file selector tree with a smaller set selected by default.<br>
   Use the checkboxes to the left of the files to select the files to download.
-![Add Client-Side Libraries dialog with query files selected](https://user-images.githubusercontent.com/17131343/41642784-2499ab88-741e-11e8-9b62-db503d17b660.png)
+![Add Client-Side Library dialog with query files selected](https://user-images.githubusercontent.com/17131343/41642784-2499ab88-741e-11e8-9b62-db503d17b660.png)
 - Specify the location of the new files within your web project. (Where do you want the files to go?)<br>
   Note: It is recommended to keep each library in a separate folder. The default location suggested for the new files will be a folder with the same name as the library under the directory the dialog was launched from.<br>
   Modify the **Target Location** as necessary.
