@@ -54,6 +54,13 @@ Visual Studio offers editing support for the libman.json file, including colorin
 
 ![Editing libman.json in Visual Studio](https://user-images.githubusercontent.com/17131343/41644228-4a552b50-7422-11e8-9a14-0704b5a60f17.png)
 
+Note: LibMan only supports one version of each library from each provider. The libman.json file will be invalid if it contains two libraries with the same library name for a given provider.
+
+## Restoring library files into your project
+
+If your project has a valid LibMan config file (libman.json), the **Restore** operation will download all the defined library files and place them in your project at the locations specified for each library.
+
+
 ## UI Elements
 Various elements include:
 - Menu items
