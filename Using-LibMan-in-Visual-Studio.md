@@ -68,9 +68,10 @@ Some actions are available from the context menu on the LibMan config file (libm
 If your project has a valid LibMan config file (libman.json), the **Restore Client-Side Libraries** operation will download all the defined library files and place them in your project at the locations specified for each library.
 
 While the operation is running, the Task Status Center icon on the status bar will be animated. Clicking the icon will open a pop-up window listing the known background tasks.<br>
-Messages will be sent to the Library Manager feed in the Output window as well as the status bar.
 
 ![LibMan restore operation running in the Task Status Center](https://user-images.githubusercontent.com/17131343/42007109-f2d25bac-7a32-11e8-8a2b-bb6b5b4d165f.png)
+
+Messages will be sent to the Library Manager feed in the Output window as well as the status bar.
 
 ## Clean library files from your project
 
