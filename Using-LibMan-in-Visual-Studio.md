@@ -66,6 +66,7 @@ Some actions are available from the context menu on the LibMan config file (libm
 ## Restoring library files into your project
 
 If your project has a valid LibMan config file (libman.json), the **Restore Client-Side Libraries** operation will download all the defined library files and place them in your project at the locations specified for each library.
+You can also kick off a restore operation for all projects in the solution by choosing the restore option that appears on the Solution context menu.
 
 While the operation is running, the Task Status Center icon on the status bar will be animated. Clicking the icon will open a pop-up window listing the known background tasks.<br>
 
@@ -83,6 +84,11 @@ If you'd like the project to be configured so that it automatically triggers a L
 This will download a NuGet package and add it to your project so LibMan will run as part of the build operation for that project in future builds.
 
 ![Enable Restore On Build: Adds a NuGet package to your project](https://user-images.githubusercontent.com/17131343/42007019-49bb0546-7a32-11e8-9e63-5cb48c791121.png)
+
+When Restore on Build is enabled, the menu item will offer to **Disable Restore Client-Side Libraries on Build**.
+If you choose this option, the LibMan NuGet package will be removed from the project and the client-side libraries will no longer be restored on each build.
+
+Regardless of the Restore on Build setting, you can manually restore by activating the **Restore Client-Side Libraries** command at any time.
 
 ## UI Elements
 Various elements include:
