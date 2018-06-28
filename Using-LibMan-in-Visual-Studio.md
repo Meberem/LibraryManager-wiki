@@ -76,8 +76,8 @@ The **Clean Client-Side Libraries** operation will remove all the library files 
 
 ## Enable Restore Client-Side Libraries on Build
 
-If you'd like the project to be configured so that it automatically triggers a LibMan Restore operation whenever the project is built, you can choose to **Enable Restore Client-Side Libraries on Build...".<br>
-This will download a NuGet package and add it to your project so LibMan will run as part of the build operation for that project.
+If you'd like the project to be configured so that it automatically triggers a LibMan Restore operation whenever the project is built, you can choose to **Enable Restore Client-Side Libraries on Build...**.<br>
+This will download a NuGet package and add it to your project so LibMan will run as part of the build operation for that project in future builds.
 
 ![Enable Restore On Build: Adds a NuGet package to your project](https://user-images.githubusercontent.com/17131343/42007019-49bb0546-7a32-11e8-9e63-5cb48c791121.png)
 
