@@ -56,14 +56,20 @@ Visual Studio offers editing support for the libman.json file, including colorin
 
 ## UI Elements
 Various elements include:
-- UI components
-  - Add New Library
+- Menu items
+  - Add->Client-side Library
+  - Restore Client-side libraries (Project/Solution)
   - Manage Client-side Libraries
-  - Enable Restore on Build
+  - Enable/Disable Restore on Build
   - Clean
+- UI
+  - Add Client-Side Library dialog
 - Editing the manifest (libman.json)
   - IntelliSense is available
 - Actions
   - Install/Uninstall, Restore, Clean
+  - Enable/Disable Restore on build
+    - Triggers NuGet download
   - Status shown in Background Task Center
   - Output shown in Output window
+  - Output shown on status bar
