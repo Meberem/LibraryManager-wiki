@@ -91,3 +91,11 @@ If you choose this option, the LibMan NuGet package will be removed from the pro
 ![Disable Restore on Build menu item](https://user-images.githubusercontent.com/17131343/42007307-23439d40-7a34-11e8-81b5-758fdbde2d6f.png)
 
 Regardless of the Restore on Build setting, you can manually restore by activating the **Restore Client-Side Libraries** command at any time.
+
+## Uninstalling Library Files
+
+To uninstall library files from within Visual Studio, edit the libman.json and press Save. The restore operation runs on Save and will remove the library files that are no longer part of the LibMan config.
+
+## Updating Library versions
+
+To update the version of a library, edit the libman.json - changing to the version required. When the file is saved, the LibMan restore operation will remove redundant files from the previous version and add new and updated files from the new version.
