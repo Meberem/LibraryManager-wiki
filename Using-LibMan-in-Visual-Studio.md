@@ -16,7 +16,7 @@ Open a Web Project in [Visual Studio 2017](https://visualstudio.com/vs) (v15.8 P
 ! If you're looking to get started with a new Web Project, see the [Getting Started - Razor MVC guide](getting-started-with-web).
 
 You can add files to your web project two ways:
-1. Use the "Add Client-Side Libraries" dialog
+1. Use the "Add Client-Side Library" dialog
 2. Edit the libman.json file in the root of the project
 
 ## Add Client-Side Libraries
