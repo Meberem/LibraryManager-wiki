@@ -78,7 +78,7 @@ Messages will be sent to the Library Manager feed in the Output window as well a
 
 The **Clean Client-Side Libraries** operation will remove all the library files that were previously restored by LibMan in Visual Studio. So that additional non-library files are not unintentionally removed, the Clean operation will not delete whole directories. It will only remove the files that were included in the previous restore.
 
-## Enable Restore Client-Side Libraries on Build
+## Enable/Disable Restore Client-Side Libraries on Build
 
 If you'd like the project to be configured so that it automatically triggers a LibMan Restore operation whenever the project is built, you can choose to **Enable Restore Client-Side Libraries on Build...**.<br>
 This will download a NuGet package and add it to your project so LibMan will run as part of the build operation for that project in future builds.
@@ -88,24 +88,6 @@ This will download a NuGet package and add it to your project so LibMan will run
 When Restore on Build is enabled, the menu item will offer to **Disable Restore Client-Side Libraries on Build**.
 If you choose this option, the LibMan NuGet package will be removed from the project and the client-side libraries will no longer be restored on each build.
 
-Regardless of the Restore on Build setting, you can manually restore by activating the **Restore Client-Side Libraries** command at any time.
+![Disable Restore on Build menu item](https://user-images.githubusercontent.com/17131343/42007307-23439d40-7a34-11e8-81b5-758fdbde2d6f.png)
 
-## UI Elements
-Various elements include:
-- Menu items
-  - Add->Client-side Library
-  - Restore Client-side libraries (Project/Solution)
-  - Manage Client-side Libraries
-  - Enable/Disable Restore on Build
-  - Clean
-- UI
-  - Add Client-Side Library dialog
-- Editing the manifest (libman.json)
-  - IntelliSense is available
-- Actions
-  - Install/Uninstall, Restore, Clean
-  - Enable/Disable Restore on build
-    - Triggers NuGet download
-  - Status shown in Background Task Center
-  - Output shown in Output window
-  - Output shown on status bar
+Regardless of the Restore on Build setting, you can manually restore by activating the **Restore Client-Side Libraries** command at any time.
