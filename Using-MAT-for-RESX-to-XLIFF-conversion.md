@@ -109,22 +109,18 @@ wait a minute or two, and pick them up from
 
 You should see translated text in the picked up XLF file. Normally vendors will manually go over the translated text and fix it up as needed. 
 
-## (Optional) Update project XLF files with translated XLF files
-
-Normally this step is done by the loc team, but it's great to make sure that your setup is working correctly.
-
-In your project, select the XLF file to update (e.g. somefile.ru.xlf) and use Multilingual App Resources context menu in Solution Explorer to execute ```Import/Recycle Translations...``` command. That will bring up the following dialog
-
-![Import Translations Dialog](./images/ImportTranslationsDialog.png)
-
-Click Add, then navigate to the translated XLF file (e.g. Russian translation if you selected "filename.**ru**.xlf"). Once you selected the file, click "Import & Recycle" button in the dialog. You should get a message that resources were imported successfully. 
-
-Now build the project and open the translated RESX file (e.g. filename.ru.resx). You should see localized strings in your RESX file. Build the project will produce satellite assemblies to be included into the VSIX. 
-
 ## Adding new resource strings
 
 If you need to add a new resource string, the process is pretty simple (once you followed the above steps to setup your project). 
 
 Simply add your new string to the English resx file and build. Your string should get automatically copied to all of the localized xlf files (e.g. filename.ru.xlf). MAT is smart enough to add new untranslated string to XLF files without losing all existing translations. 
 
-Now at some point you will need to let loc team know that new resources were added. Typically we will do it about two weeks prior to the ship date to allow sufficient time for vendors to localize the newly added items. The vendors will import the translated XLFs themselves. The only other action that will be needed is merging from localization branch into the master (or whatever branch is used for testing and/or shipping the release). 
+Upload the xlf files to LibraryManager.Loc - https://github.com/aspnet/LibraryManager.Loc repository and let the localization team know that the files are ready for translation. 
+
+Typically we will do it about two weeks prior to the ship date to allow sufficient time for vendors to localize the newly added items. The vendors will send a pr once the files are translated. At this point we will need to merge the changes to LibraryManager.Loc repository. 
+
+To copy the files back to LibraryManger project, select the XLF file to update (e.g. somefile.ru.xlf) and use Multilingual App Resources context menu in Solution Explorer to execute Import/Recycle Translations... command. That will bring up - Import Translations Dialog.
+
+Click Add, then navigate to the translated XLF file (e.g. Russian translation if you selected "filename.ru.xlf"). Once you selected the file, click "Import & Recycle" button in the dialog. You should get a message that resources were imported successfully.
+
+Now build the project and open the translated RESX file (e.g. filename.ru.resx). You should see localized strings in your RESX file. Build the project will produce satellite assemblies to be included into the VSIX. 
