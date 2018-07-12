@@ -119,7 +119,9 @@ Upload the xlf files to LibraryManager.Loc - https://github.com/aspnet/LibraryMa
 
 Typically we will do it about two weeks prior to the ship date to allow sufficient time for vendors to localize the newly added items. The vendors will send a pr once the files are translated. At this point we will need to merge the changes to LibraryManager.Loc repository. 
 
-To copy the files back to LibraryManger project, select the XLF file to update (e.g. somefile.ru.xlf) and use Multilingual App Resources context menu in Solution Explorer to execute Import/Recycle Translations... command. That will bring up - Import Translations Dialog.
+To copy the files back to LibraryManger project, select the XLF file to update (e.g. somefile.ru.xlf) and use Multilingual App Resources context menu in Solution Explorer to execute Import/Recycle Translations... command. That will bring up the following dialog:
+
+![Import Translations Dialog](./images/ImportTranslationsDialog.png)
 
 Click Add, then navigate to the translated XLF file (e.g. Russian translation if you selected "filename.ru.xlf"). Once you selected the file, click "Import & Recycle" button in the dialog. You should get a message that resources were imported successfully.
 
