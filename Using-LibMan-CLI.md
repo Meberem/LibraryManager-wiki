@@ -8,9 +8,9 @@ Before you can use LibMan from the CLI, you must first download and install the 
 
 If you need to install LibMan from an alternative location, use the following syntax.
 
-`> dotnet tool install -g libman --version 1.0.94-g606058a278 --add-source C:\Temp\`
+`> dotnet tool install -g Microsoft.Web.LibraryManager.CLI --version 1.0.94-g606058a278 --add-source C:\Temp\`
 
-Will install LibMan CLI from C:\Temp\libman.1.0.94-g606058a278.nupgk
+Will install LibMan CLI from C:\Temp\Microsoft.Web.LibraryManager.CLI.1.0.94-g606058a278.nupkg
 
 For more information, see [Install a Global Tool](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools#install-a-global-tool)
 
