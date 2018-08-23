@@ -1,7 +1,7 @@
-Please see the [library.json reference](library-json-reference) for more details.
+Please see the [libman.json reference](library-json-reference) for more details.
 
 ## filesystem reference
-Here are some specifics about the filesystem provider when used from the `library.json` file.
+Here are some specifics about the filesystem provider when used from the `libman.json` file.
 
 ### provider
 Nothing specific to filesystem.
