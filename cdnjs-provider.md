@@ -1,7 +1,5 @@
-Please see the [library.json reference](library-json-reference) for more details.
-
 ## cdnjs reference
-Here are some specifics about the cdnjs provider when used from the `library.json` file.
+Here are some specifics about the cdnjs provider.
 
 ### provider
 Nothing specific to cdnjs.
