@@ -39,10 +39,7 @@ See the following pages for information on how to use LibMan in the various supp
 - [LibMan CLI reference](LibMan-CLI-Reference)
 
 ### Providers
-- What are providers? How to choose?
-- [Cdnjs](cdnjs-provider)
-- UnPkg
-- [File system](file-system-provider)
+LibMan offers multiple CDNs to use as providers.  For more information, see the [Providers](Providers) documentation.
 
 ### Other References
 - [Error codes](error-codes)
