@@ -10,7 +10,7 @@ The JSDelivr provider uses the JSDelivr CDN, which mirrors any NPM package as we
 
 This provider uses the `library@version` syntax for NPM packages, and `@scope/library@version` for scoped NPM packages (note the leading `@`).  The value `latest` can be used as the version to always fetch the latest released version of the library.
 
-To use GitHub as a source, the syntax is `user/project@version` where version can be either a release, a branch, or a commit hash.
+To use GitHub as a source, the syntax is `user/project@version` where version can be either a release (or `latest`), a branch, or a commit hash.
 
 # unpkg
 
